@@ -27,11 +27,8 @@ function toFahrenheit (temp) {
 			}
 		}
 
-// Get a reference to the button element in the DOM
 var button = document.getElementById('converter');
 
-// This function should determine which conversion should
-// happen based on which radio button is selected.
 function determineConverter (clickEvent) {
 		if (document.getElementById('celcius').checked) {
 			toCelcius(tempValue.value);
@@ -42,7 +39,6 @@ function determineConverter (clickEvent) {
 		}
 }
 
-// Assign a function to be executed when the button is clicked
 button.addEventListener('click', determineConverter);
 
 const clearAll = document.getElementById('clear');
